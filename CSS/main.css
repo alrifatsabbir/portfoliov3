@@ -1,0 +1,175 @@
+/* --------- Header File ---------- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+body{
+    background: linear-gradient(to right bottom, #0a1023, #302265, #170e41, #000000, #0a1023) no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+header{
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    padding: 0 10%;
+    background: linear-gradient(to right, transparent, #122, transparent, #212, transparent);
+    backdrop-filter: blur(12px);
+    border-bottom: 0.1px solid #212;
+    z-index: 10;
+}
+header > h1 > a {
+    background: linear-gradient( to left,#fdd , #ddf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: sans-serif;
+    position: relative;
+}
+header > h1 > a:hover {
+    background: linear-gradient(to left, #ddffff, #fdeeef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 12px;
+    list-style: none;
+}
+.nav-list > li > a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+}
+.nav-list > li > a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #90f8bf;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: 0.5s all linear;
+}
+.nav-list > li > a:hover::before{
+    transform-origin: left;
+    transform: scaleX(1);
+    transition: 0.4s linear;
+}
+.nav-list > li > a:hover{
+    color: #90f8bf;
+    transition: 0.5s ease;
+}
+.nav-list > li > .c{
+    color: #90f8bf;
+}
+.prj{
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 80px;
+    font-size: 14px;
+    width: 360px;
+    height: 150px;
+    background-color: #170e41;
+}
+.prj > ul > li > a {
+    color: #fdd;
+    text-decoration: none;
+}
+.prj > ul > li > a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #90f8bf;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: 0.5s all linear;
+}
+.prj > ul > li > a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+    transition: 0.4s linear;
+}
+
+.part-1 > li ,
+.part-2 > li {
+    list-style: none;
+}
+.part-1 > li > a:hover,
+.part-2 > li > a:hover {
+    color: #90f8bf;
+}
+.show{
+    display: flex;
+}
+.nav-list1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+    list-style: none;
+}
+.nav-list1 > li > a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    border-radius: 0 12px;
+    padding: 5px;
+    transition: 0.35s linear;
+}
+.nav-list1 > li > a:hover {
+    color: #cff;
+    background-color: #111;
+    padding: 5px;
+    transition: 0.4s linear;
+}
+#Resume{
+    border: 1px solid #dfd;
+    border-radius: 0 12px;
+    color: #ddffdd;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+    transition: 0.4s linear;
+}
+#Resume:hover{
+    border: 1px solid #dfd;
+    padding: 5px;
+    border-radius: 0 12px;
+    color: #ddffdd;
+    border: 1px solid #112;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #111;
+    transition: 0.4s linear;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+    transition: 0.3s;
+}

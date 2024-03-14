@@ -1,0 +1,74 @@
+@media screen and (max-width: 1024px) {
+    header h1 a{
+        font-size: 2rem;
+        position: relative;
+    }
+    .nav-list{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        top: 100px;
+        left: -100%;
+        width: 100%;
+        column-gap: 5vh;
+        transition: 0.3s linear;
+        background: #235;
+        padding: 40vh 0;
+    }
+    .nav-list.active{
+       left: 0;
+    }
+    .nav-list1 li a,
+    #Resume {
+        display: none;
+    }
+    .prj{
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 40%;
+        right: 1%;
+        font-size: 10px;
+        height: 160px;
+        width: 130px;
+        background-color: #0077ff38;
+    }
+    .show{
+        display: block;
+    }
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 5px;
+        cursor: pointer;
+    }
+    .hamburger-span{
+        height: 4px;
+        width: 25px;
+        background-color: #dfdfff;
+    }
+    .hamburger.active .hamburger-span:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .hamburger-span:nth-child(1){
+        transition: 0.3s ease-in;
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .hamburger-span:nth-child(3){
+        transition: 0.3s ease-out;
+        transform: translateY(-10px) rotate(-45deg);
+    }
+}
+
+@media  screen and (max-width: 1115px) and (min-width: 1025px){
+    .nav-list1 li a{
+        display: none;
+    }
+    #Resume a{
+        display: block;
+    }
+
+}
