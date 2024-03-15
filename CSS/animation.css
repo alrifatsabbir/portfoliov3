@@ -1,1 +1,26 @@
-
+.notice{
+    position: relative;
+    top: 100px;
+    color: #fdd;
+    left: 10vw;
+    width: 80vw;
+    overflow-x: hidden;
+    display: flex;
+}
+.notice p{
+    position: relative;
+    background: linear-gradient(to left, #434, transparent, #434);
+    animation-name: mark;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    justify-self: center;
+    font-size: 12px;
+}
+@keyframes mark {
+    0%{left: -110%;}
+    /* 25%{left: 50%;} */
+    50%{left: 110%;}
+    /* 75%{left: 50%;} */
+    100%{left: -110%;}
+}

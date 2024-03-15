@@ -3,8 +3,6 @@
     body{
         overflow-x: hidden;
     }
-
-
     /* ----------- Header ---------------- */
     header h1 a{
         font-size: 2rem;
@@ -70,6 +68,22 @@
     }
 
     /* ---------------- Hero Section ------------- */
+    .img-comp > .img-comp-1{
+        grid-area: 2 / 1 / 3 / 2;
+        height: 45px;
+        opacity: 0.3;
+    }
+    .img-comp > .img-comp-2{
+        grid-area: 3 / 6 / 3 / 6;
+        height: 42px;
+        opacity: 0.4;
+    }
+    .img-comp > .img-comp-3{
+        grid-area: 5 / 1 / 6 / 4;
+        height: 45px;
+        opacity: 0.35;
+    }
+
 }
 
 @media  screen and (max-width: 1120px) and (min-width: 1025px){
