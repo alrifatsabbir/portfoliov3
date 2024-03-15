@@ -13,6 +13,7 @@ body{
     background-position: center;
     background-size: cover;
     min-height: 100vh;
+    max-width: 100%;
     overflow-x: hidden;
 }
 header{
@@ -175,7 +176,9 @@ header > h1 > a:hover {
 }
 /* ------------- Hero Section ------------- */
 .hero-components{
-    width:100vw;
+    max-width:100vw;
+    display: flex;
+    flex-wrap: wrap;
 }
 .mq{
     width: 100vw;
@@ -198,12 +201,12 @@ header > h1 > a:hover {
     opacity: 0.3;
 }
 .img-comp > .img-comp-2{
-    grid-area: 3 / 6 / 4 / 7;
+    grid-area: 3 / 2 / 3 / 6;
     height: 70px;
     opacity: 0.4;
 }
 .img-comp > .img-comp-3{
-    grid-area: 6 / 2 / 7 / 3;
+    grid-area: 6 / 1 / 6 / 4;
     height: 70px;
     opacity: 0.35;
 }
