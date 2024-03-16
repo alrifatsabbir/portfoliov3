@@ -74,7 +74,7 @@
         opacity: 0.3;
     }
     .img-comp > .img-comp-2{
-        grid-area: 3 / 6 / 3 / 6;
+    grid-area: 3 / 6 / 3 / 6;
         height: 42px;
         opacity: 0.4;
     }

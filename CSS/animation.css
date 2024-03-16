@@ -16,6 +16,7 @@
     animation-delay: 2s;
     justify-self: center;
     font-size: 12px;
+    z-index: 1;
 }
 @keyframes mark {
     0%{left: -110%;}
